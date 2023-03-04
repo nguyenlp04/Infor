@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100%;
+}
+.background {
+  background: url(./background.jpeg) repeat;
+  height: 400px;
+  display: flex;
+  position: relative;
+}
+/* Menu */
+.background .menu {
+  height: 40px;
+  width: 75%;
+  background-color: #566adc;
+}
+.background .menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.background .menu ul li {
+  padding: 8px 30px;
+}
+.background .menu ul a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.background .menu ul a:hover {
+  color: aqua;
+}
+.background .hello {
+  position: absolute;
+  bottom: 100px;
+  color: white;
+  left: 200px;
+}
+.background .hello h1 {
+  display: inline-block;
+  padding: 5px 0;
+}
+.background .hello .nho {
+  font-size: 12px;
+}
+/* Card */
+.background .card {
+  color: white;
+  width: 25%;
+  height: 400px;
+  background-color: #566adc;
+}
+
+.background .card .avatar {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(to left bottom, blue, red, rgb(175, 245, 12));
+  margin-top: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background .card .avatar .img {
+  width: 85px;
+  height: 85px;
+  background: url(./avatar.JPG) center no-repeat;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.background .card .name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.background .card .address,
+.background .card .contact {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.background .card .social i {
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+}
+.background .card .bt-cv button {
+  border: none;
+  background-color: #fff;
+  height: 40px;
+  width: 150px;
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.background .card .bt-cv button .fa-angles-down {
+  display: none;
+}
+.background .card .bt-cv button:hover .fa-angles-down {
+  display: block;
+}
+.background .card .bt-cv button:hover .fa-download {
+  display: none;
+}
+.background .card .bt-cv i {
+  padding-right: 5px;
+}
+.background .card .bt-cv button:hover {
+  background-color: #38bb9e;
+  color: white;
+}
+
+.background .card .bt-cv button::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  background-color: #321212;
+  transition: 0.5s;
+}
+.background .card .bt-cv button::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  bottom: 0;
+  border-bottom-right-radius: 10px;
+
+  right: 0;
+  background-color: #321212;
+  transition: 0.5s;
+}
+
+.background .card .bt-cv button:hover::before {
+  border-top-right-radius: 10px;
+
+  width: 99%;
+}
+.background .card .bt-cv button:hover::after {
+  width: 99%;
+  border-bottom-left-radius: 10px;
+}
+
+.about {
+  text-align: left;
+  height: 100%;
+  background-color: #eef0fb;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+}
+.about .content {
+  width: 500px;
+}
+.about .title h3 {
+  color: #566adc;
+  padding: 5px 0px;
+}
+.about .first {
+  color: #8d9be7;
+}
+.about p {
+  padding-top: 30px;
+  line-height: 25px;
+}
+.infor .content {
+  width: 500px;
+}
+.infor {
+  text-align: left;
+  height: 100%;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+}
+.infor .content h3 {
+  color: #566adc;
+  padding: 5px 0px;
+}
+.infor .first {
+  margin-bottom: 40px;
+}
+.infor .school-name {
+  padding: 15px 0;
+}
+.infor .school {
+  font-weight: 300;
+}
+.title,
+.title h3 i,
+.content h3 i {
+  font-family: "Dancing Script", cursive;
+  color: #8d9be7;
+  font-size: 30px;
+}
+.chungnhan {
+  background-color: #eef0fb;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+}
+.chungnhan .title {
+  margin-bottom: 50px;
+}
+.chungnhan .content {
+  width: 500px;
+}
+.chungnhan img {
+  width: 200px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+.foter {
+  height: 60px;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  background-color: #566adc;
+}
+.foter h5 {
+  width: 400px;
+  text-align: left;
+  color: white;
+}
